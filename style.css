@@ -114,6 +114,115 @@ body {
   width: 100%;
   padding: 16px;
 }
+/* banner */
+.hero {
+  min-height: 100vh;
+  background: url("assets/hero-bg.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+ 
+}
+
+
+.mic-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 32px;
+  
+}
+
+
+
+.circle {
+   width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.mic {
+  width: 30%;
+  max-width: 120px;
+  min-width: 50px;
+  position: absolute;
+}
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #3cff9e;
+  color: black;
+  font-size: 0.75rem
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  animation: pulse 1.5s infinite;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 8px;
+}
+
+.hero p {
+  font-size: 1rem;
+  opacity: 0.85;
+  max-width: 500px;
+  margin: 0 auto 24px;
+}
+.buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.spotify {
+  background: linear-gradient(90deg,#ffcc33,#ff00cc);
+  color: white;
+}
+
+.subscribe {
+  background: transparent;
+  color: #3cff9e;
+  border: 1px solid #3cff9e;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(60,255,158,0.7);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 12px rgba(60,255,158,0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
 
 
 @media screen and (max-width:576px) {
@@ -129,4 +238,28 @@ body {
   .nav-inner {
     height: 64px;
   }
+  .hero {
+    min-height: 100svh;
+    padding: 16px;
+  }
+
+  .circle {
+    width: 160px;
+    height: 160px;
+  }
+
+  .mic {
+    width: 60px;
+  }
+
+  .badge {
+     font-size: 0.6rem;
+    padding: 3px 8px;
+    top: 6px;
+    right: 6px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+
 }
