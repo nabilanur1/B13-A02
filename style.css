@@ -26,8 +26,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
-  background:#412567;
+  border-bottom: 1px solid #412567 ;
+  background-color: #1A0B2E;
  margin: 0 auto;
 }
 body {
@@ -221,6 +221,88 @@ button {
     transform: scale(1);
   }
 }
+/* podcast sections */
+
+/* Section */
+.about {
+  background: rgba(26, 11, 46, 1);
+  color: #FFFFFF;
+  padding: 50px 200px 120px 200px;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  height: 222px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  gap: 16px;
+  
+}
+
+
+/* Title */
+.about h2 {
+  width: 1200px;
+  font-size: 3rem;
+  margin-bottom: 16px;
+  font-weight: 700;
+  line-height: 58px;
+  text-align: center;
+  color:#ffffff;
+  padding: 50px 200px 16px 200px;
+}
+
+/* Description */
+.desc {
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 20px;
+  max-width: 1200px;
+  margin: 0 auto 16px;
+  font-weight: 400;
+}
+.divider {
+  width: 1200px;
+  height: 0;
+  border: 1px solid rgba(255, 255, 255, 1);
+  opacity: 0.1;
+  margin: 50px auto;
+}
+
+/* Stats */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 80px;
+  margin-top: 80px;
+  
+}
+
+.stat h3 {
+  /* width: 240px; */
+  height: 58px;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #22ff99;
+  margin-bottom: 8px;
+  
+  
+}
+
+.stat span {
+  font-size: 1rem;
+  letter-spacing: 0%;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+
 
 
 
@@ -263,3 +345,62 @@ button {
     font-size: 2.2rem;
 
 }
+
+
+  .about {
+    padding: 40px 16px 80px;
+  }
+
+  .container {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .about h2 {
+    width: 100%;
+    font-size: 2rem;
+    line-height: 40px;
+    padding: 0;
+  }
+
+  .desc {
+    font-size: 0.9rem;
+    line-height: 22px;
+    max-width: 100%;
+  }
+
+  .divider {
+    width: 90%;
+    margin: 40px auto;
+  }
+   .stats {
+    grid-template-columns: repeat(2, 1fr); /* ✅ 2x2 */
+    gap: 32px 24px;
+    margin-top: 48px;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  
+  
+   .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  
+  .stat h3 {
+    font-size: 2.2rem;
+    margin-bottom: 6px;
+  }
+  .stat span {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.85;
+  }
+  
+}
+
